@@ -1,0 +1,20 @@
+Netlist_File: mohan1.net Netlist_ID: SHA256:bf0cbd510ead6507bf217c5a16006a1d15e52b0ae93ebc533d60d16b91dee4dd
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+p_dffe_Q	20	7	0	#0
+pbar_dffe_Q	26	4	0	#1
+q_dffe_Q	22	4	0	#2
+qbar_dffe_Q	28	4	0	#3
+r_dffe_Q	24	7	0	#4
+rbar_dffe_Q	30	4	0	#5
+$iopadmap$tff.p	20	3	0	#6
+$iopadmap$tff.pbar	26	3	0	#7
+$iopadmap$tff.q	22	3	0	#8
+$iopadmap$tff.qbar	28	3	0	#9
+$iopadmap$tff.r	24	3	0	#10
+$iopadmap$tff.rbar	30	3	0	#11
+clk		14	3	0	#12
+$false		3	1	0	#13
+$true		2	1	0	#14

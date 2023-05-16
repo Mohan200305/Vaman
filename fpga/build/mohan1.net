@@ -1,0 +1,1690 @@
+<?xml version="1.0"?>
+<block name="mohan1.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ff45ae019adfd8ddc9651aa485da7d1cc80afac7f587a182516f1773344b8923" atom_netlist_id="SHA256:188c4e7a2b933a2ea63c0f9317a099a49706c151b0a4e7300741e47e992a62f5">
+	<inputs>clk</inputs>
+	<outputs>out:p out:pbar out:q out:qbar out:r out:rbar</outputs>
+	<clocks>$auto$clkbufmap.cc:247:execute$1093</clocks>
+	<block name="p_dffe_Q" instance="PB-LOGIC[0]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$p</port>
+			<port name="LOGIC0_QDI">p_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$r</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="p_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="p_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="p_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">p_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="p_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="p_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="p_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$p</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="pbar_dffe_Q" instance="PB-LOGIC[1]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$pbar</port>
+			<port name="LOGIC0_QDI">pbar_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$r</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="pbar_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="pbar_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="pbar_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">pbar_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="pbar_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="pbar_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="pbar_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$pbar</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="q_dffe_Q" instance="PB-LOGIC[2]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$q</port>
+			<port name="LOGIC0_QDI">q_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$pbar</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="q_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="q_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="q_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">q_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="q_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="q_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="q_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$q</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="qbar_dffe_Q" instance="PB-LOGIC[3]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$qbar</port>
+			<port name="LOGIC0_QDI">qbar_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$pbar</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="qbar_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="qbar_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="qbar_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">qbar_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="qbar_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="qbar_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="qbar_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$qbar</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="r_dffe_Q" instance="PB-LOGIC[4]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$r</port>
+			<port name="LOGIC0_QDI">r_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$qbar</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="r_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="r_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="r_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">r_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="r_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="r_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="r_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$r</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="rbar_dffe_Q" instance="PB-LOGIC[5]" mode="default">
+		<inputs>
+			<port name="FAKE_CONST">$false</port>
+			<port name="LOGIC0_BA1">open</port>
+			<port name="LOGIC0_BA2">open</port>
+			<port name="LOGIC0_BAB">open</port>
+			<port name="LOGIC0_BB1">open</port>
+			<port name="LOGIC0_BB2">open</port>
+			<port name="LOGIC0_BSL">open</port>
+			<port name="LOGIC0_F1">$true</port>
+			<port name="LOGIC0_F2">$false</port>
+			<port name="LOGIC0_FS">$iopadmap$rbar</port>
+			<port name="LOGIC0_QDI">rbar_dffe_Q_D</port>
+			<port name="LOGIC0_QDS">$true</port>
+			<port name="LOGIC0_QEN">$iopadmap$qbar</port>
+			<port name="LOGIC0_QRT">$false</port>
+			<port name="LOGIC0_QST">$false</port>
+			<port name="LOGIC0_TA1">open</port>
+			<port name="LOGIC0_TA2">open</port>
+			<port name="LOGIC0_TAB">open</port>
+			<port name="LOGIC0_TB1">open</port>
+			<port name="LOGIC0_TB2">open</port>
+			<port name="LOGIC0_TBS">open</port>
+			<port name="LOGIC0_TSL">open</port>
+		</inputs>
+		<outputs>
+			<port name="LOGIC0_CZ">open</port>
+			<port name="LOGIC0_FZ">LOGIC[0].FZ[0]-&gt;LOGIC[0].FZ_to_PB-LOGIC.LOGIC0_FZ</port>
+			<port name="LOGIC0_QZ">LOGIC[0].QZ[0]-&gt;LOGIC[0].QZ_to_PB-LOGIC.LOGIC0_QZ</port>
+			<port name="LOGIC0_TZ">open</port>
+		</outputs>
+		<clocks>
+			<port name="LOGIC0_QCK">$auto$clkbufmap.cc:247:execute$1093</port>
+		</clocks>
+		<block name="rbar_dffe_Q" instance="LOGIC[0]" mode="FRAGS">
+			<inputs>
+				<port name="BA1">open</port>
+				<port name="BA2">open</port>
+				<port name="BAB">open</port>
+				<port name="BB1">open</port>
+				<port name="BB2">open</port>
+				<port name="BSL">open</port>
+				<port name="F1">PB-LOGIC.LOGIC0_F1[0]-&gt;PB-LOGIC.LOGIC0_F1_to_LOGIC[0].F1</port>
+				<port name="F2">PB-LOGIC.LOGIC0_F2[0]-&gt;PB-LOGIC.LOGIC0_F2_to_LOGIC[0].F2</port>
+				<port name="FAKE_CONST">PB-LOGIC.FAKE_CONST[0]-&gt;PB-LOGIC.FAKE_CONST_to_LOGIC[0].FAKE_CONST</port>
+				<port name="FS">PB-LOGIC.LOGIC0_FS[0]-&gt;PB-LOGIC.LOGIC0_FS_to_LOGIC[0].FS</port>
+				<port name="QCK">PB-LOGIC.LOGIC0_QCK[0]-&gt;PB-LOGIC.LOGIC0_QCK_to_LOGIC[0].QCK</port>
+				<port name="QDI">PB-LOGIC.LOGIC0_QDI[0]-&gt;PB-LOGIC.LOGIC0_QDI_to_LOGIC[0].QDI</port>
+				<port name="QDS">PB-LOGIC.LOGIC0_QDS[0]-&gt;PB-LOGIC.LOGIC0_QDS_to_LOGIC[0].QDS</port>
+				<port name="QEN">PB-LOGIC.LOGIC0_QEN[0]-&gt;PB-LOGIC.LOGIC0_QEN_to_LOGIC[0].QEN</port>
+				<port name="QRT">PB-LOGIC.LOGIC0_QRT[0]-&gt;PB-LOGIC.LOGIC0_QRT_to_LOGIC[0].QRT</port>
+				<port name="QST">PB-LOGIC.LOGIC0_QST[0]-&gt;PB-LOGIC.LOGIC0_QST_to_LOGIC[0].QST</port>
+				<port name="TA1">open</port>
+				<port name="TA2">open</port>
+				<port name="TAB">open</port>
+				<port name="TB1">open</port>
+				<port name="TB2">open</port>
+				<port name="TBS">open</port>
+				<port name="TSL">open</port>
+			</inputs>
+			<outputs>
+				<port name="CZ">open</port>
+				<port name="FZ">FRAGS[0].FZ[0]-&gt;LOGIC-FZ</port>
+				<port name="QZ">FRAGS[0].QZ[0]-&gt;LOGIC-QZ</port>
+				<port name="TZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="rbar_dffe_Q" instance="FRAGS[0]" mode="default">
+				<inputs>
+					<port name="BA1">open</port>
+					<port name="BA2">open</port>
+					<port name="BAB">open</port>
+					<port name="BB1">open</port>
+					<port name="BB2">open</port>
+					<port name="BSL">open</port>
+					<port name="F1">LOGIC.F1[0]-&gt;FRAGS-F1</port>
+					<port name="F2">LOGIC.F2[0]-&gt;FRAGS-F2</port>
+					<port name="FAKE_CONST">LOGIC.FAKE_CONST[0]-&gt;FRAGS-FAKE_CONST</port>
+					<port name="FS">LOGIC.FS[0]-&gt;FRAGS-FS</port>
+					<port name="QCK">LOGIC.QCK[0]-&gt;FRAGS-QCK</port>
+					<port name="QDI">LOGIC.QDI[0]-&gt;FRAGS-QDI</port>
+					<port name="QDS">LOGIC.QDS[0]-&gt;FRAGS-QDS</port>
+					<port name="QEN">LOGIC.QEN[0]-&gt;FRAGS-QEN</port>
+					<port name="QRT">LOGIC.QRT[0]-&gt;FRAGS-QRT</port>
+					<port name="QST">LOGIC.QST[0]-&gt;FRAGS-QST</port>
+					<port name="TA1">open</port>
+					<port name="TA2">open</port>
+					<port name="TAB">open</port>
+					<port name="TB1">open</port>
+					<port name="TB2">open</port>
+					<port name="TBS">open</port>
+					<port name="TSL">open</port>
+				</inputs>
+				<outputs>
+					<port name="CZ">open</port>
+					<port name="FZ">f_frag[0].FZ[0]-&gt;FRAGS-FZ</port>
+					<port name="QZ">q_frag_modes[0].QZ[0]-&gt;FRAGS-QZ</port>
+					<port name="TZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="open" instance="c_frag_modes[0]" />
+				<block name="rbar_LUT1_I0.f_frag" instance="f_frag[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v:28.63-28.99|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:485.10-490.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="F1">FRAGS.F1[0]-&gt;f_frag-F1</port>
+						<port name="F2">FRAGS.F2[0]-&gt;f_frag-F2</port>
+						<port name="FS">FRAGS.FS[0]-&gt;f_frag-FS</port>
+					</inputs>
+					<outputs>
+						<port name="FZ">rbar_dffe_Q_D</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="rbar_dffe_Q" instance="q_frag_modes[0]" mode="EXT">
+					<inputs>
+						<port name="CZI">open</port>
+						<port name="FAKE_CONST">FRAGS.FAKE_CONST[0]-&gt;q_frag_modes-FAKE_CONST</port>
+						<port name="QCK">FRAGS.QCK[0]-&gt;q_frag_modes-QCK</port>
+						<port name="QDI">FRAGS.QDI[0]-&gt;q_frag_modes-QDI</port>
+						<port name="QDS">FRAGS.QDS[0]-&gt;q_frag_modes-QDS</port>
+						<port name="QEN">FRAGS.QEN[0]-&gt;q_frag_modes-QEN</port>
+						<port name="QRT">FRAGS.QRT[0]-&gt;q_frag_modes-QRT</port>
+						<port name="QST">FRAGS.QST[0]-&gt;q_frag_modes-QST</port>
+					</inputs>
+					<outputs>
+						<port name="QZ">EXT[0].QZ[0]-&gt;q_frag_modes-QZ</port>
+					</outputs>
+					<clocks />
+					<block name="rbar_dffe_Q" instance="EXT[0]" mode="default">
+						<inputs>
+							<port name="CZI">open</port>
+							<port name="FAKE_CONST">q_frag_modes.FAKE_CONST[0]-&gt;EXT-FAKE_CONST</port>
+							<port name="QCK">q_frag_modes.QCK[0]-&gt;EXT-QCK</port>
+							<port name="QDI">q_frag_modes.QDI[0]-&gt;EXT-QDI</port>
+							<port name="QDS">q_frag_modes.QDS[0]-&gt;EXT-QDS</port>
+							<port name="QEN">q_frag_modes.QEN[0]-&gt;EXT-QEN</port>
+							<port name="QRT">q_frag_modes.QRT[0]-&gt;EXT-QRT</port>
+							<port name="QST">q_frag_modes.QST[0]-&gt;EXT-QST</port>
+						</inputs>
+						<outputs>
+							<port name="QZ">q_frag[0].QZ[0]-&gt;EXT-QZ</port>
+						</outputs>
+						<clocks />
+						<block name="rbar_dffe_Q" instance="q_frag[0]">
+							<attributes>
+								<attribute name="src">"/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v:161.10-161.59|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:845.3-856.4"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="Z_QCKS">1</parameter>
+							</parameters>
+							<inputs>
+								<port name="CONST0">EXT.FAKE_CONST[0]-&gt;q_frag-CONST0</port>
+								<port name="CONST1">EXT.QDS[0]-&gt;q_frag-CONST1</port>
+								<port name="QD">EXT.QDI[0]-&gt;q_frag-QD</port>
+								<port name="QEN">EXT.QEN[0]-&gt;q_frag-QEN</port>
+								<port name="QRT">EXT.QRT[0]-&gt;q_frag-QRT</port>
+								<port name="QST">EXT.QST[0]-&gt;q_frag-QST</port>
+							</inputs>
+							<outputs>
+								<port name="QZ">$iopadmap$rbar</port>
+							</outputs>
+							<clocks>
+								<port name="QCK">EXT.QCK[0]-&gt;q_frag-QCK</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.p" instance="PB-BIDIR[6]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$p</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.p" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.p" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.p" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">p</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:p" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.pbar" instance="PB-BIDIR[7]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$pbar</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.pbar" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.pbar" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.pbar" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">pbar</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:pbar" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.q" instance="PB-BIDIR[8]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$q</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.q" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.q" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.q" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">q</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:q" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.qbar" instance="PB-BIDIR[9]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$qbar</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.qbar" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.qbar" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.qbar" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">qbar</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:qbar" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.r" instance="PB-BIDIR[10]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$r</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.r" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.r" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.r" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">r</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:r" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$tff.rbar" instance="PB-BIDIR[11]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$iopadmap$rbar</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$tff.rbar" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$tff.rbar" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$tff.rbar" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">rbar</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:rbar" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="clk" instance="PB-BIDIR[12]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$false</port>
+			<port name="BIDIR0_INEN">$true</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">open</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">BIDIR[0].IZ[0]-&gt;BIDIR[0].IZ_to_PB-BIDIR.BIDIR0_IZ</port>
+		</outputs>
+		<clocks />
+		<block name="clk" instance="BIDIR[0]" mode="INPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">open</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">INPUT[0].IZ[0]-&gt;BIDIR-IZ</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="clk" instance="INPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;INPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;INPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">open</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">bidir[0].I_DAT[0]-&gt;INPUT-IZ</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$auto$clkbufmap.cc:252:execute$1094" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:171.9-174.8|/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:43.9-50.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">INPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">inpad[0].inpad[0]-&gt;bidir-I_PAD_$inp</port>
+						<port name="O_DAT">open</port>
+						<port name="O_EN">INPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">$auto$clkbufmap.cc:247:execute$1093</port>
+						<port name="O_PAD_$out">open</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="clk" instance="inpad[0]">
+					<attributes />
+					<parameters />
+					<inputs />
+					<outputs>
+						<port name="inpad">clk</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$false" instance="PB-SYN_GND[13]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="GND0_GND">GND[0].GND[0]-&gt;GND[0].GND_to_PB-SYN_GND.GND0_GND</port>
+		</outputs>
+		<clocks />
+		<block name="$false" instance="GND[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="GND">$false</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="$true" instance="PB-SYN_VCC[14]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="VCC0_VCC">VCC[0].VCC[0]-&gt;VCC[0].VCC_to_PB-SYN_VCC.VCC0_VCC</port>
+		</outputs>
+		<clocks />
+		<block name="$true" instance="VCC[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="VCC">$true</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

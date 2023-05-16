@@ -1,0 +1,8 @@
+set_io clk              64
+set_io p                61
+set_io q                60
+set_io r                59
+set_io pbar             57
+set_io qbar             56
+set_io rbar             55
+

@@ -1,0 +1,7 @@
+clk       14   3  0  # set_io clk              64
+$iopadmap$tff.p  20   3  0  # set_io p                61
+$iopadmap$tff.q  22   3  0  # set_io q                60
+$iopadmap$tff.r  24   3  0  # set_io r                59
+$iopadmap$tff.pbar  26   3  0  # set_io pbar             57
+$iopadmap$tff.qbar  28   3  0  # set_io qbar             56
+$iopadmap$tff.rbar  30   3  0  # set_io rbar             55
